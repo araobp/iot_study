@@ -62,6 +62,6 @@ $ apt-get install motion
 ###Use case 1
 
 ```
-  [USB Webcam]-[Raspberry Pi 3]- on_picture_save ->[OpenALPR]-> [Cassandra] 
+  [USB Webcam]-[Raspberry Pi 3]- on_picture_save ->[OpenALPR]-- MQTT -->[Cassandra] 
                                --- raw image ---------------> [Cassandra]
 ```
