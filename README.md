@@ -34,3 +34,27 @@ Connect cqlsh to Cassandra:
 ```
 $ ./cqlsh
 ```
+
+##Automatic Licence Plate Recognition (ALPR)
+
+https://github.com/openalpr/openalpr
+
+```
+$ alpr <image file>
+plate0: 8 results
+    - 2217	 confidence: 91.239
+    - Z217	 confidence: 78.6942
+    - 2Z17	 confidence: 78.384
+    - 22I7	 confidence: 78.1156
+    - ZZ17	 confidence: 65.8392
+    - Z2I7	 confidence: 65.5708
+    - 2ZI7	 confidence: 65.2606
+    - ZZI7	 confidence: 52.7158
+```
+
+##USB webcam with motion detection
+
+I have confirmed it works on my Raspberry Pi 3:
+```
+$ apt-get install motion
+```
