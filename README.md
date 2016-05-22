@@ -69,3 +69,4 @@ $ apt-get install motion
 ##Interesting toys
 
 - [Lego Mindstorms](http://www.lego.com/mindstorms/)
+- [Remote control EV3 robot via Bluemix](https://developer.ibm.com/bluemix/2015/01/19/remote-control-ev3-robot-via-ibm-bluemix-iot/)
