@@ -65,3 +65,7 @@ $ apt-get install motion
   [USB Webcam]-[Raspberry Pi 3]- on_picture_save ->[OpenALPR]-- MQTT -->[Cassandra] 
                                --- raw image ---------------> [Cassandra]
 ```
+
+##Interesting toys
+
+- [Lego Mindstorms](http://www.lego.com/mindstorms/)
