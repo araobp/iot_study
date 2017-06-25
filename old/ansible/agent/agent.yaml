@@ -1,0 +1,6 @@
+cpe: openwrt1 
+location: okinawa
+mqtt:
+  host: localhost 
+  port: 1883 
+  topic: sensor
