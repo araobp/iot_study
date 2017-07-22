@@ -1,25 +1,25 @@
 # iot_study
 
-##MQTT broker installation
+## MQTT broker installation
 ```
 $ apt-get update
 $ apt-get install mosquitto
 ```
-##MQTT client module
+## MQTT client module
 ```
 $ pip install paho-mqtt
 ```
-##Sample IPython notebooks
+## Sample IPython notebooks
 
 - [publisher](./ipynb/publisher.ipynb)
 - [subscriber](./ipynb/subscriber.ipynb)
 
-##Java8 installation
+## Java8 installation
 
 - Download Java8 from https://java.com/en/download/
 - Set JAVA_HOME and PATH environment variables.
 
-##Cassandra installation
+## Cassandra installation
 
 Download Cassandra and start it: 
 ```
@@ -35,7 +35,7 @@ Connect cqlsh to Cassandra:
 $ ./cqlsh
 ```
 
-##Automatic Licence Plate Recognition (ALPR)
+## Automatic Licence Plate Recognition (ALPR)
 
 https://github.com/openalpr/openalpr
 
@@ -52,21 +52,21 @@ plate0: 8 results
     - ZZI7	 confidence: 52.7158
 ```
 
-##USB webcam with motion detection
+## USB webcam with motion detection
 
 I have confirmed it works on my Raspberry Pi 3:
 ```
 $ apt-get install motion
 ```
 
-###Use case 1
+### Use case 1
 
 ```
   [USB Webcam]-[Raspberry Pi 3]- on_picture_save ->[OpenALPR]-- MQTT -->[Cassandra] 
                                --- raw image ---------------> [Cassandra]
 ```
 
-##Interesting toys
+## Interesting toys
 
 - [Lego Mindstorms](http://www.lego.com/mindstorms/)
 - [Remote control EV3 robot via Bluemix](https://developer.ibm.com/bluemix/2015/01/19/remote-control-ev3-robot-via-ibm-bluemix-iot/)
