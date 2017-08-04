@@ -1,5 +1,11 @@
 # iot_study
 
+## Google Assistant SDK on RasPi3 with Bluetooth HSP
+
+[Step 1] http://youness.net/raspberry-pi/bluetooth-headset-raspberry-pi-3-ad2p-hsp
+
+[Step 2] https://developers.google.com/assistant/sdk/develop/python/?authuser=1
+
 ## MQTT broker installation
 ```
 $ apt-get update
