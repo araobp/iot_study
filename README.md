@@ -2,11 +2,19 @@
 
 ## Google Assistant SDK on RasPi3 with Bluetooth HSP
 
-[Step 1] http://youness.net/raspberry-pi/bluetooth-headset-raspberry-pi-3-ad2p-hsp
+[Step 1] Upgrade bluez to the latest one
+
+https://learn.adafruit.com/install-bluez-on-the-raspberry-pi/installation
+
+[Step 2] Upgrade pulseaudio and check bluetooth connectivity
+
+http://youness.net/raspberry-pi/bluetooth-headset-raspberry-pi-3-ad2p-hsp
 
 I purchased [this USB dongle](http://www2.elecom.co.jp/products/LBT-UAN05C2.html) and [this headset](http://www2.elecom.co.jp/products/LBT-HS20MPCRD.html).
 
-[Step 2] https://developers.google.com/assistant/sdk/develop/python/?authuser=1
+[Step 3] Install Google Assistant and try it out
+
+https://developers.google.com/assistant/sdk/develop/python/?authuser=1
 
 ## MQTT broker installation
 ```
