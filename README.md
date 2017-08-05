@@ -6,7 +6,7 @@ I purchased [this USB mic supporting analog audio-out](http://buffalo.jp/product
 
 [Step 1] Audio setup
 
-List up the USB audio device and confirm the card and device numbers:
+List up the USB audio device to confirm the card and device numbers:
 ```
 pi@raspberrypi:~ $ arecord -l
 **** List of CAPTURE Hardware Devices ****
