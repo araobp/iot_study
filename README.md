@@ -2,7 +2,7 @@
 
 ## Google Assistant SDK on RasPi3 with USB mic
 
-I purchased [this USB mic supporting analog audio-out](http://buffalo.jp/product/multimedia/headset/bshsm05bk/), and I connected (my old analog speaker)[https://www.bhphotovideo.com/c/product/456867-REG/JBL_JBLRADMICBLK_Radial_Micro_iPod_Dock.html] to the device.
+I purchased [this USB mic supporting analog audio-out](http://buffalo.jp/product/multimedia/headset/bshsm05bk/), and I connected [my old analog speaker](https://www.bhphotovideo.com/c/product/456867-REG/JBL_JBLRADMICBLK_Radial_Micro_iPod_Dock.html) to the device.
 
 [Step 1] Audio setup
 
