@@ -80,14 +80,10 @@ void SYSTEM_Initialize(void)
 
 void OSCILLATOR_Initialize(void)
 {
-    // SCS FOSC; SPLLEN disabled; IRCF 8MHz_HF; 
-    OSCCON = 0x70;
+    // SCS FOSC; SPLLEN disabled; IRCF 1MHz_HF; 
+    OSCCON = 0x58;
     // TUN 0; 
     OSCTUNE = 0x00;
-    // Wait for PLL to stabilize
-    while(PLLR == 0)
-    {
-    }
 }
 
 void WDT_Initialize(void)

@@ -54,7 +54,7 @@
   Section: Macro Declarations
 */
 
-#define PWM2_INITIALIZE_DUTY_VALUE    511
+#define PWM2_INITIALIZE_DUTY_VALUE    50
 
 /**
   Section: EPWM Module APIs
@@ -64,8 +64,8 @@ void EPWM2_Initialize (void)
 {
     // Set the PWM to the options selected in PIC10 / PIC12 / PIC16 / PIC18 MCUs 
     
-    // CCP2M P2A: active high; P2B: active high; DC2B 3; P2M single; 
-    CCP2CON = 0x3C;
+    // CCP2M P2A: active high; P2B: active high; DC2B 2; P2M single; 
+    CCP2CON = 0x2C;
     
     // CCP2ASE operating; PSS2BD low; PSS2AC low; CCP2AS disabled; 
     CCP2AS = 0x00;
@@ -76,8 +76,8 @@ void EPWM2_Initialize (void)
     // STR2B P2B_to_port; STR2A P2A_to_CCP2M; STR2SYNC start_at_begin; 
     PSTR2CON = 0x01;
     
-    // CCPR2L 127; 
-    CCPR2L = 0x7F;
+    // CCPR2L 12; 
+    CCPR2L = 0x0C;
     
     // CCPR2H 0; 
     CCPR2H = 0x00;

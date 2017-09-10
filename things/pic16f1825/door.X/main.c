@@ -1,6 +1,8 @@
 /*
  * Door controller
  * 
+ * September 11th, 2017
+ * 
  * Commands
  * 07: read Vout of hall sensor
  * 15<angle in degrees>: set servo motor's arm at the angle
@@ -57,9 +59,9 @@ void main(void)
                     angle = (uint16_t)atoi(&buf[2]);
                     dutyValue = calc_duty(angle);
                     EPWM2_LoadDutyValue(dutyValue);
-                    printf("0\n");
+                    printf("%d 0\n", dutyValue);
                 } else if (!strncmp("18", buf, 2)) {  // LED control
-                    if (!strncmp("0", &buf[2], 0)) {
+                    if (!strncmp("0", &buf[2], 1)) {
                         LATAbits.LATA2 = 0;
                     } else {
                         LATAbits.LATA2 = 1;                        
