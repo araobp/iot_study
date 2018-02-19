@@ -65,6 +65,16 @@ https://developers.google.com/assistant/sdk/develop/python/?authuser=1
 
 Note: it seems like that bluez requires Pulseaudio, unlike the case of USB mic.
 
+My headset's voice sensitivity is no good, so I set ASSISTANT_MIC_SENSITIVITY to -48:
+```
+pulseaudio --start
+source env/bin/activate
+export ASSISTANT_MIC_SENSITIVITY=-48
+google-assistant-demo
+```
+
+Anyway, it's not a good idea to use both WiFi and Bluetooth enabled on RasPi.　The interferance is significant.
+
 ## MQTT broker installation
 ```
 $ apt-get update
