@@ -42,7 +42,7 @@ void main(void)
     // printf("read angle from EEPROM: %d\n", angle);
     dutyValue = calc_duty(angle);
     EPWM2_LoadDutyValue(dutyValue);
-            
+        
     while (1)
     {
         // Hall sensor
@@ -58,7 +58,7 @@ void main(void)
             }
         }
         // Servo motor and LED
-        do {
+        if (EUSART_DataReady) {
             c = EUSART_Read();
             if (c == '\n') {
                 buf[cnt] = '\0';
@@ -81,6 +81,6 @@ void main(void)
             } else {
                 buf[cnt++] = c;
             }
-        } while (EUSART_DataReady);
+        }
     }
 }
